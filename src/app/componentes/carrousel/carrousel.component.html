@@ -1,0 +1,14 @@
+<div class="fondo container-fluid text-center">
+    <div class="titulo">Un recorrido de estos 15 años</div>
+    <div class="subTitulo">Juntos a personas que son muy importantes en mi vida</div>
+    <div class="containerCarrousel">
+        <button class="carousel-control carousel-control-prev" (click)="prevSlide()">&#10094;</button>
+        <div class="slider-container" #sliderContainer>
+            <img *ngFor="let image of images; let i = index" class="slider-item" [src]="image" />
+        </div>
+        <button class="carousel-control carousel-control-next" (click)="nextSlide()">&#10095;</button>
+        <div class="dots-container">
+            <span *ngFor="let image of images; let i = index" class="dot" [class.active]="currentIndex === i" (click)="goToSlide(i)"></span>
+        </div>
+    </div>
+</div>

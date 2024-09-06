@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo{
+    height: min-content;
+    background: var(--var-color-primario);
+    padding-bottom: 100px;
+}
+
+#cinta{
+    width: 100%;
+    transform: translateY(-2px);
+    padding-bottom: 50px;
+}
+
+.divResumen{
+    height: 100%;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.titulo {
+    font-family: var(--var-font1);
+    font-size: 75px;
+    padding-top: 50px;
+}
+
+.subTitulo {
+    font-family: var(--var-font2);
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+
+.boton {
+    font-family: var(--var-font2);
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton a:hover{
+    color: white;
+}
+
+
+
+.fondoGris{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: rgba(78, 78, 78, 0.562);
+    z-index: 10;
+}
+
+.datos{
+    padding: 50px;
+    height: min-content;
+    width: min-content;
+    background: var(--var-color-secundario);
+    font-family: var(--var-font2);
+    font-size: 25px;
+    white-space: nowrap;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px black;
+    position: relative;
+}
+
+#regalo2{
+    height: 40px;
+}
+
+#cerrar{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+}
+
+#closeIcon{
+    height: 30px;
+}
+
+#flores{
+    position: absolute;
+    top: -30px;
+    left: -50px;
+    width: 250px;
+}
+.gracias{
+    font-weight: bold;
+    z-index: 20;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .datos{
+        font-size: 15px;
+    }
+    #flores{
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        width: 150px;
+    }
+    #regalo2{
+        height: 20px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .titulo {
+        font-family: var(--var-font1);
+        font-size: 55px;
+        padding-top: 50px;
+    }
+    
+    .subTitulo {
+        font-family: var(--var-font2);
+        font-size: 35px;
+        padding-bottom: 50px;
+    }
+    .datos{
+        font-size: 15px;
+        display: flex;
+    }
+}

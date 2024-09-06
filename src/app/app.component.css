@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.todo{
+    width: 100%;
+    position: relative;
+}
+
+.divMusica{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: var(--var-color-primario);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    font-family: var(--var-font1);
+    font-size: 75px;
+}
+
+.subTitulo {
+    font-family: var(--var-font2);
+    font-size: 35px;
+}
+
+.subTituloMusica {
+    font-family: var(--var-font2);
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.divBoton{
+    padding: 10px;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.boton{
+    width: 250px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    font-family: var(--var-font2);
+    white-space: nowrap;
+}
+
+.boton:hover{
+    background: var(--var-color-terciario);
+    color: white;
+}
+
+#divMusica{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.438);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+#divMusicaPlay{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.438);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: expandContract 2s infinite;
+    z-index: 50;
+}
+
+#musicaIcon{
+    width: 50%;
+}
+
+
+@keyframes expandContract {
+    0% {
+        transform: scale(1);
+        /* Tamaño inicial de la imagen */
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Expande la imagen a un 110% del tamaño original */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Vuelve al tamaño original */
+    }
+}
+
+#subir{
+    width: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.438);
+    border-radius: 50%;
+    border: none;
+}
+
+#flecha{
+    padding: 5px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .rowBoton{
+        display: flex;
+        justify-content: center;
+    }
+    .divMusica{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #divMusica{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.438);
+        position: fixed;
+        right: 20px;
+        top: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+    }
+    
+    #divMusicaPlay{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.438);
+        position: fixed;
+        right: 20px;
+        top: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: expandContract 2s infinite;
+        z-index: 50;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        font-family: var(--var-font1);
+        font-size: 55px;
+    }
+    .subTitulo {
+        font-family: var(--var-font2);
+        font-size: 25px;
+    }
+    
+    .subTituloMusica {
+        font-family: var(--var-font2);
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    
+}
+

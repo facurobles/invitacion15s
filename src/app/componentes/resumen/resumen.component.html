@@ -1,0 +1,25 @@
+<div class="container-fluid fondo">
+    <img id="cinta" src="../../../assets/cinta4.png" alt="">
+    <div class="row divResumen">
+        <div class="col">
+            <div class="row titulo">Maricarmen</div>
+            <div class="row subTitulo">Mis 15 años</div>
+        </div>
+        <div class="col">
+            <div class="row boton"><a target="_blank" href="https://wa.link/apf8hu">CONFIRMAR ASISTENCIA</a></div>
+            <div class="row boton"><a (click)="agendarEvento()">AGENDAR FIESTA</a></div>
+            <div class="row boton"><a (click)="cambiarEstado()">DEJAR REGALO</a></div>
+        </div>
+    </div>
+    <div class="fondoGris text-center" *ngIf="estado">
+        <div class="datos">
+            <img id="flores" src="../../../assets/flores.png" alt="">
+            <button id="cerrar" (click)="cambiarEstado()" ><img id="closeIcon" src="../../../assets/closeIcon.png" alt=""></button>
+            <div class="gracias">MUCHAS GRACIAS!<img id="regalo2" src="../../../assets/regaloIcon.png" alt=""></div>
+            <div>
+                <div class="subtitulo">Alias: ALIAS.PARA.TRANSFERENCIAS</div> 
+                <div class="subtitulo">CBU: 123123123123123123123123</div> 
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="todo">
+    <div id="divMusicaPlay" *ngIf="banderaAudio" (click)="pauseAudio(audioPlayer)">
+        <img id="musicaIcon" src="../assets/musica.png" alt="">
+    </div>
+    <div id="divMusica" *ngIf="!banderaAudio" (click)="playAudio(audioPlayer)">
+        <img id="musicaIcon" src="../assets/musica.png" alt="">
+    </div>
+    <audio #audioPlayer>
+        <source src="../assets/Beyoncé.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="divMusica" *ngIf="estado">
+
+        <div class="subTitulo">Bienvenidos a la invitación de </div>
+        <div class="titulo">Maricarmen</div>
+        <div class="subTituloMusica">La música de fondo es parte de la experiencia</div>
+        <div class="subTituloMusica">Elige una opción..</div>
+        <div class="row rowBoton">
+            <div class=" divBoton"><button (click)="scrollToTop()" (click)="playAudio(audioPlayer)"  (click)="cambiarEstado()" class="boton">INGRESAR CON MÚSICA</button></div>
+            <div class=" divBoton"><button (click)="scrollToTop()" (click)="cambiarEstado()" class="boton">INGRESAR SIN MÚSICA</button></div>
+        </div>
+    </div>
+    <app-inicio></app-inicio>
+    <app-cuenta></app-cuenta>
+    <app-info></app-info>
+    <app-carrousel></app-carrousel>
+    <app-regalo></app-regalo>
+    <app-resumen></app-resumen>
+    <button id="subir"><img id="flecha" (click)="scrollToTop()" *ngIf="showButton" src="../assets/flecha-arriba.png" alt=""></button>
+</div>

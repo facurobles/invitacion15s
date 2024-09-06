@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo{
+    height: min-content;
+    background: var(--var-color-secundario);
+}
+
+.containerCinta{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+.divCinta{
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.cinta{
+    width: min-content;
+    background: var(--var-color-primario);
+    font-family: var(--var-font1);
+    font-size: 55px;
+    height: min-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 55px;
+    z-index: 5;
+    box-shadow: 0 0px 15px -5px #8f8f8f;
+}
+
+#puntaCintaI{
+    height: 75px;
+    width: min-content;
+    transform: translateX(2px);
+}
+#puntaCintaD{
+    height: 75px;
+    width: min-content;
+    transform: translateX(-2px);
+}
+
+.texto{
+    font-family: var(--var-font1);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.info{
+    font-family: var(--var-font2);
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.boton{
+    width: 250px;
+    background: var(--var-color-primario);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: var(--var-color-cuarto);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.boton:hover{
+    background: var(--var-color-terciario);
+    color: white;
+}
+
+
+.divInfo{
+    padding-top: 30px;
+}
+
+#cinta{
+    padding-top: 100px;
+    width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    .cinta{
+        width: min-content;
+        background: var(--var-color-primario);
+        font-family: var(--var-font1);
+        font-size: 45px;
+        height: min-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 55px;
+        z-index: 5;
+        box-shadow: 0 0px 15px -5px #8f8f8f;
+    }
+    
+    #puntaCintaI{
+        height: 75px;
+        width: min-content;
+        transform: translateX(2px);
+    }
+    #puntaCintaD{
+        height: 75px;
+        width: min-content;
+        transform: translateX(-2px);
+    }
+}

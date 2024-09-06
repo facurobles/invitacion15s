@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    --var-font1: "Parisienne", cursive;
+    --var-font2: "Lora", serif;
+    --var-color-primario: #FFBBCB;
+    --var-color-secundario: #d2d3d5;
+    --var-color-terciario: #E6769C;
+    --var-color-cuarto: #a54666;
+}
+
+
+/*barra de scroll*/
+/* Estilo de la barra de desplazamiento completa */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+    height: 10px; /* Alto de la barra de desplazamiento horizontal */
+}
+
+/* Estilo de la pista de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: white; /* Color de fondo de la pista */
+    border-radius: 10px; /* Borde redondeado de la pista */
+}
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Borde redondeado de la barra de desplazamiento */
+}
+
+/* Estilo de la barra de desplazamiento al hacer hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #afafaf;
+}

@@ -1,0 +1,26 @@
+<div class="fondo container-fluid text-center">
+    <div class="divLineas">
+        <img id="lineas" src="../../../assets/lineas.png" alt="">
+        <div id="circuloChico">
+            <img id="regalo" src="../../../assets/regaloIcon.png" alt="">
+        </div>
+    </div>
+    <div class="titulo">
+        Regalos
+    </div>
+    <div class="subTitulo">
+        Por si deseas regalarme algo más que tu hermosa presencia..
+    </div>
+    <button class="boton" (click)="cambiarEstado()">ALIAS Y CBU</button>
+    <div class="fondoGris text-center" *ngIf="estado">
+        <div class="datos">
+            <img id="flores" src="../../../assets/flores.png" alt="">
+            <button id="cerrar" (click)="cambiarEstado()" ><img id="closeIcon" src="../../../assets/closeIcon.png" alt=""></button>
+            <div class="gracias">MUCHAS GRACIAS!<img id="regalo2" src="../../../assets/regaloIcon.png" alt=""></div>
+            <div>
+                <div class="subtitulo">Alias: ALIAS.PARA.TRANSFERENCIAS</div> 
+                <div class="subtitulo">CBU: 123123123123123123123123</div> 
+            </div>
+        </div>
+    </div>
+</div>
